@@ -52,13 +52,13 @@ addView((state) => {
 });
 
 addView((state) => {
-  console.log(`The latest topic in the library: ${state.topics[state.topic.length -1].name}`);
+  console.log(`The latest topic in the library: ${state.topics[state.topics.length -1].name}`);
 });
 
 
 store.dispatch({
   type: 'ADD_TOPIC',
-  course: {
+  topic: {
     name: 'This is the new topic',
     topic: 'Really does not matter'
   }
